@@ -49,11 +49,11 @@ app.use('/uploads', express.static(__dirname + '/uploads'));
 app.use(express.json());
 app.use(cookieParser());
 
-// app.use(cors({
-//     credentials: true,
-//     origin: [process.env.CLIENT_URL,"https://mern-chat-app.onrender.com"]
-// }))
-app.use(cors());
+app.use(cors({
+    credentials: true,
+    origin: [process.env.CLIENT_URL,"https://mern-chat-app.onrender.com"]
+}))
+// app.use(cors());
 
 app.get('/test', (req, res) => {
     res.json('test ok');
