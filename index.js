@@ -51,7 +51,7 @@ app.use(cookieParser());
 
 app.use(cors({
     credentials: true,
-    origin: [process.env.CLIENT_URL,"https://mern-chat-app.onrender.com"]
+    origin: [process.env.CLIENT_URL,"https://mern-chat-app-api.onrender.com"]
 }))
 // app.use(cors());
 
